@@ -6,6 +6,7 @@ import { HelloComponent } from './hello/hello.component';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { LengthFinder, PersonTitle } from './pipe-demo/length-finder';
 import { XyzPipe } from './xyz.pipe';
+import { UserItemsComponent } from './user-items/user-items.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { XyzPipe } from './xyz.pipe';
     PipeDemoComponent,
     LengthFinder,
     PersonTitle,
-    XyzPipe
+    XyzPipe,
+    UserItemsComponent
   ],
   imports: [
     BrowserModule
