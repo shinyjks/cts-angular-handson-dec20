@@ -1,6 +1,8 @@
 <div>
     <h3>
-        Name : {{name | uppercase}} <br/>
+        Name : {{firstName | uppercase}} <br/>
+        Person Title : {{firstName | personTitle: title}} <br/>
+        Name Length : {{firstName | findLength}} <br/>
         Salary : {{salary | currency: 'INR'}} <br/>
         Dob : {{dob | date}} <br/>
         Dob : {{dob | date: 'dd/MMM/yyyy'}} <br/>
