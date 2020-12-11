@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { Hello } from './hello';
 
 @Component({
   selector: 'app-hello',
-  template: `<div>
-  <h4>Hello, {{message}}</h4>
-  </div>`,
+  templateUrl: './hello.component.html',
   styleUrls: ['./hello.component.css']
 })
 export class HelloComponent{
-  message = "We are learning angular"
+  hello1: Hello = new Hello(1, "First Message");
+  hello2: Hello = new Hello(2, "Second Message");
   
 }
