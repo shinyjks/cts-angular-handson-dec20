@@ -1,0 +1,11 @@
+<div>
+    <h3>No of Likes: {{likes}}</h3>
+    <h3>No of Dislikes: {{dislikes}}</h3>
+    <br/>
+    <button (click) = "handleClear()">Clear</button>
+    <app-child 
+    (likeButton) = "likes = $event"
+    (dislikeButton) = "dislikes = $event"
+    [clear] = "clear">
+</app-child>
+</div>
