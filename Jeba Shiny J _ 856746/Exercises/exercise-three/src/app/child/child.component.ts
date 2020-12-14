@@ -8,7 +8,10 @@ import { Component, EventEmitter, Input, Output} from '@angular/core';
 export class ChildComponent{
 
   @Input()
-  clear: boolean = false;
+  clearLike: number = undefined;
+  
+  @Input()
+  clearDislike: number = undefined;
 
   likeCount : number = 1;
   dislikeCount : number = 1;
@@ -21,19 +24,17 @@ export class ChildComponent{
   dislikeButton : EventEmitter<number> = new EventEmitter<number>();
 
   handleLike(){
-    if(this.clear == true ){
+    if(this.clearLike == 0){
       this.likeCount = 1;
-      this.dislikeCount = 1;
-      this.clear = false;
+      this.clearLike = undefined;
     }
     this.likeButton.emit(this.likeCount++);
   }
 
   handleDislike(){
-    if(this.clear == true ){
-      this.likeCount = 1;
+    if(this.clearDislike == 0){
       this.dislikeCount = 1;
-      this.clear = false;
+      this.clearDislike = undefined;
     }
     this.dislikeButton.emit(this.dislikeCount++);
   }
