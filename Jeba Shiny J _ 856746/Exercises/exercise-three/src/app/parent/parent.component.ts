@@ -9,11 +9,9 @@ export class ParentComponent{
 
   likes : number = undefined;
   dislikes : number = undefined;
-  clear : boolean = false;
-
+  
   handleClear(){
     this.likes = 0;
     this.dislikes = 0;
-    this.clear = true;
   }
 }
