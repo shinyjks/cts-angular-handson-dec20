@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -9,6 +10,10 @@ import { XyzPipe } from './xyz.pipe';
 import { UserItemsComponent } from './user-items/user-items.component';
 import { EventBindComponent } from './event-bind/event-bind.component';
 import { PropertyBindComponent } from './property-bind/property-bind.component';
+import { TwoWayDataBindComponent } from './two-way-data-bind/two-way-data-bind.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserItemComponent } from './user-item/user-item.component';
+
 
 @NgModule({
   declarations: [
@@ -20,10 +25,14 @@ import { PropertyBindComponent } from './property-bind/property-bind.component';
     XyzPipe,
     UserItemsComponent,
     EventBindComponent,
-    PropertyBindComponent
+    PropertyBindComponent,
+    TwoWayDataBindComponent,
+    UserListComponent,
+    UserItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
