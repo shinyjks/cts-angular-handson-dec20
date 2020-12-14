@@ -13,6 +13,8 @@ import { PropertyBindComponent } from './property-bind/property-bind.component';
 import { TwoWayDataBindComponent } from './two-way-data-bind/two-way-data-bind.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserItemComponent } from './user-item/user-item.component';
+import { ChildCounterComponent } from './child-counter/child-counter.component';
+import { ParentCounterComponent } from './parent-counter/parent-counter.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { UserItemComponent } from './user-item/user-item.component';
     PropertyBindComponent,
     TwoWayDataBindComponent,
     UserListComponent,
-    UserItemComponent
+    UserItemComponent,
+    ChildCounterComponent,
+    ParentCounterComponent
   ],
   imports: [
     BrowserModule,

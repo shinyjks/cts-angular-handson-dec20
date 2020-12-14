@@ -4,4 +4,8 @@
     <div style="text-align: center;">
         <app-user-item [username] = "name"></app-user-item>
     </div> 
+
+    <div *ngFor = "let item of namesArray">
+        <app-user-item [username] = "item"></app-user-item>
+    </div>
 </div>
