@@ -7,6 +7,8 @@ import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { LengthFinder, PersonTitle } from './pipe-demo/length-finder';
 import { XyzPipe } from './xyz.pipe';
 import { UserItemsComponent } from './user-items/user-items.component';
+import { EventBindComponent } from './event-bind/event-bind.component';
+import { PropertyBindComponent } from './property-bind/property-bind.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { UserItemsComponent } from './user-items/user-items.component';
     LengthFinder,
     PersonTitle,
     XyzPipe,
-    UserItemsComponent
+    UserItemsComponent,
+    EventBindComponent,
+    PropertyBindComponent
   ],
   imports: [
     BrowserModule
