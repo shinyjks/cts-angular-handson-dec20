@@ -1,0 +1,21 @@
+<div>
+    <button class="btn btn-primary" (click) = "handleClick()">Click</button>
+</div>
+<table class="table table-striped" *ngIf = "users">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let u of users">
+            <td>{{u.id}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.username}}</td>
+            <td>{{u.email}}</td>
+        </tr>
+    </tbody>
+</table>
