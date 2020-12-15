@@ -15,6 +15,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserItemComponent } from './user-item/user-item.component';
 import { ChildCounterComponent } from './child-counter/child-counter.component';
 import { ParentCounterComponent } from './parent-counter/parent-counter.component';
+import { FormDemoComponent } from './form-demo/form-demo.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ParentCounterComponent } from './parent-counter/parent-counter.componen
     UserListComponent,
     UserItemComponent,
     ChildCounterComponent,
-    ParentCounterComponent
+    ParentCounterComponent,
+    FormDemoComponent
   ],
   imports: [
     BrowserModule,
