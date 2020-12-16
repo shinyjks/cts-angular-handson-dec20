@@ -1,15 +1,19 @@
 <div class="container-fluid">
-  <h1 class="text-center">Angular Framework</h1>
+  <h1 class="text-center">Angular Framework</h1><hr/>
+  
+  <div class="row container">
+    <div class="col-2">
+      <a routerLink = "register" class="btn btn-primary">Register</a>
+    </div>
+    <div class="col-2">
+      <a routerLink = "user-details" class="btn btn-primary">Users</a>
+    </div>
+    <div class="col-2">
+      <a routerLink = "employee-details" class="btn btn-primary">Employees</a>
+    </div>
+  </div>
   <hr/>
-  <div class="row">
-    <div class="col-6">
-      <app-employee-register></app-employee-register>
+    <div>
+      <router-outlet></router-outlet>
     </div>
-    <div class="col-6">
-      <app-employee-details></app-employee-details>
-    </div>
-  </div>
-  <div>
-    <app-user-details></app-user-details>
-  </div>
 </div>
