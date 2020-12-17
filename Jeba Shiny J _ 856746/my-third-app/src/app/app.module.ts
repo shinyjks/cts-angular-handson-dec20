@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { SuccessComponent } from './success/success.component';
 
 let routes : Routes = [
   {path : "", component : EmployeeRegisterComponent}, 
   {path : "register", component: EmployeeRegisterComponent}, 
   {path : "user-details", component : UserDetailsComponent},
-  {path : "employee-details", component : EmployeeDetailsComponent}
+  {path : "employee-details", component : EmployeeDetailsComponent},
+  {path : "login", component : LoginFormComponent},
+  {path : "success/:employeeId", component : SuccessComponent}
 ];
 
 @NgModule({
@@ -21,7 +25,9 @@ let routes : Routes = [
     AppComponent,
     EmployeeDetailsComponent,
     EmployeeRegisterComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    LoginFormComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
